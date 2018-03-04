@@ -11,6 +11,10 @@ package com.project.DocApp.Entities;
  */
 public class Feedback {
 
+    public Feedback(int feedbackId, int patientId, String feedbackText) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getFeedbackId() {
         return feedbackId;
     }

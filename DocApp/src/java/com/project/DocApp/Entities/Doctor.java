@@ -11,6 +11,10 @@ package com.project.DocApp.Entities;
  */
 public class Doctor {
 
+    public Doctor(int doctorId, String doctorName, String doctorAddress, String doctorContact, String doctorEmail, String doctorQualification, String doctorSpecialist, String doctorWorktime, String doctorPassword) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getDoctorId() {
         return doctorId;
     }
@@ -59,30 +63,37 @@ public class Doctor {
         this.doctorQualification = doctorQualification;
     }
 
-    public String getDoctorSpecialization() {
-        return doctorSpecialization;
+    public String getDoctorSpecialist() {
+        return doctorSpecialist;
     }
 
-    public void setDoctorSpecialization(String doctorSpecialization) {
-        this.doctorSpecialization = doctorSpecialization;
+    public void setDoctorSpecialist(String doctorSpecialist) {
+        this.doctorSpecialist = doctorSpecialist;
     }
 
-    public String getMeetingTime() {
-        return MeetingTime;
+    public String getDoctorWorktime() {
+        return doctorWorktime;
     }
 
-    public void setMeetingTime(String MeetingTime) {
-        this.MeetingTime = MeetingTime;
+    public void setDoctorWorktime(String doctorWorktime) {
+        this.doctorWorktime = doctorWorktime;
     }
- 
+ public String getDoctorPassword() {
+        return doctorPassword;
+    }
+
+    public void setDoctorPassword(String doctorPassword) {
+        this.doctorPassword = doctorPassword;
+    }
     int doctorId;
     String doctorName;
     String doctorAddress;
     String doctorContact;
     String doctorEmail;
     String doctorQualification;
-    String doctorSpecialization;
-    String MeetingTime;
+    String doctorSpecialist;
+    String doctorWorktime;
+    String doctorPassword;
     
     
     

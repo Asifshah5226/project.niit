@@ -11,6 +11,10 @@ package com.project.DocApp.Entities;
  */
 public class Disease {
 
+    public Disease(int diseaseId, int doctorId, String diseaseName, String diseaseDetail, String diseaseSymptoms, String diseaseRemidies) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getDiseaseId() {
         return diseaseId;
     }
@@ -35,12 +39,12 @@ public class Disease {
         this.diseaseName = diseaseName;
     }
 
-    public String getDiseaseDetails() {
-        return diseaseDetails;
+    public String getDiseaseDetail() {
+        return diseaseDetail;
     }
 
-    public void setDiseaseDetails(String diseaseDetails) {
-        this.diseaseDetails = diseaseDetails;
+    public void setDiseaseDetail(String diseaseDetail) {
+        this.diseaseDetail = diseaseDetail;
     }
 
     public String getDiseaseSymptoms() {
@@ -51,17 +55,18 @@ public class Disease {
         this.diseaseSymptoms = diseaseSymptoms;
     }
 
-    public String getDiseaseRemedies() {
-        return diseaseRemedies;
+    public String getDiseaseRemidies() {
+        return diseaseRemidies;
     }
 
-    public void setDiseaseRemedies(String diseaseRemedies) {
-        this.diseaseRemedies = diseaseRemedies;
+    public void setDiseaseRemidies(String diseaseRemidies) {
+        this.diseaseRemidies = diseaseRemidies;
     }
+    
     int diseaseId;
     int doctorId;
     String diseaseName;
-    String diseaseDetails;
+    String diseaseDetail;
     String diseaseSymptoms;
-    String diseaseRemedies;
+    String diseaseRemidies; 
 }

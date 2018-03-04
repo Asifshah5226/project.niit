@@ -11,6 +11,10 @@ package com.project.DocApp.Entities;
  */
 public class Patient {
 
+    public Patient(int PatientId, String PatientName, String PatientSex, String PatientAddress, String PatientContact, String PatientEmail, String PatientBloodType, String PatientDOB, String PatientPassword) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getPatientId() {
         return patientId;
     }
@@ -74,6 +78,14 @@ public class Patient {
     public void setPatientDOB(String patientDOB) {
         this.patientDOB = patientDOB;
     }
+    
+    public String getPatientPassword() {
+        return patientPassword;
+    }
+
+    public void setPatientPassword(String patientPassword) {
+        this.patientPassword = patientPassword;
+    }
     int patientId;
     String patientName;
     String patientAddress;
@@ -82,6 +94,7 @@ public class Patient {
     String patientBloodType;
     String patientSex;
     String patientDOB;
+    String patientPassword;
     
     
 }
