@@ -101,12 +101,13 @@ public class DiseaseDAOImpl implements DiseaseDAO {
             if(resultSet!=null){
                 //resultSet.first();
                 while(resultSet.next()){
+                    int diseaseid = resultSet.getInt(1);
                     int doctorId = resultSet.getInt(2);
                     String diseaseName = resultSet.getString(3);
                     String diseaseDetail = resultSet.getString(4);
                     String diseaseSymptoms = resultSet.getString(5);
                     String diseaseRemidies = resultSet.getString(6);
-                    Disease disease = new Disease(diseaseId,doctorId,diseaseName,diseaseDetail,diseaseSymptoms,diseaseRemidies);
+                    Disease disease = new Disease(diseaseid,doctorId,diseaseName,diseaseDetail,diseaseSymptoms,diseaseRemidies);
                     diseaseList.add(disease);
                 }
             }

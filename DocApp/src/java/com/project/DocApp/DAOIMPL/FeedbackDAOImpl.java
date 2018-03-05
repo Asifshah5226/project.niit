@@ -96,9 +96,10 @@ public class FeedbackDAOImpl implements FeedbackDAO {
             if(resultSet!=null){
                 //resultSet.first();
                 while(resultSet.next()){
+                    int feedbackid = resultSet.getInt(1);
                     int patientId = resultSet.getInt(2);
                     String feedbackText = resultSet.getString(3);
-                    Feedback feedback = new Feedback(feedbackId,patientId,feedbackText);
+                    Feedback feedback = new Feedback(feedbackid,patientId,feedbackText);
                     feedbackList.add(feedback);
                 }
             }

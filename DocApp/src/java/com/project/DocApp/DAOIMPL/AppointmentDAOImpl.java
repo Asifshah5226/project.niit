@@ -100,11 +100,12 @@ public class AppointmentDAOImpl implements AppointmentDAO {
             if(resultSet!=null){
                 //resultSet.first();
                 while(resultSet.next()){
+                    int appointmentid = resultSet.getInt(1);
                     int patientId = resultSet.getInt(2);
                     int doctorId = resultSet.getInt(3);
                     String appointmentType = resultSet.getString(4);
                     String appointmentTime = resultSet.getString(5);
-                    Appointment appointment = new Appointment(appointmentId,patientId,doctorId,appointmentType,appointmentTime);
+                    Appointment appointment = new Appointment(appointmentid,patientId,doctorId,appointmentType,appointmentTime);
                     appointmentList.add(appointment);
                 }
             }

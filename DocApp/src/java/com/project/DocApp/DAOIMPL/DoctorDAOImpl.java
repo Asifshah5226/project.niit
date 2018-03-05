@@ -107,6 +107,7 @@ public class DoctorDAOImpl implements DoctorDAO {
             if(resultSet!=null){
                 //resultSet.first();
                 while(resultSet.next()){
+                    int doctorid = resultSet.getInt(1);
                     String doctorName = resultSet.getString(2);
                     String doctorAddress = resultSet.getString(3);
                     String doctorContact = resultSet.getString(4);
@@ -115,7 +116,7 @@ public class DoctorDAOImpl implements DoctorDAO {
                     String doctorSpecialist = resultSet.getString(7);
                     String doctorWorktime = resultSet.getString(8);
                     String doctorPassword = resultSet.getString(9);
-                    Doctor doctor = new Doctor(doctorId,doctorName,doctorAddress,doctorContact,doctorEmail,doctorQualification,doctorSpecialist,doctorWorktime,doctorPassword);
+                    Doctor doctor = new Doctor(doctorid,doctorName,doctorAddress,doctorContact,doctorEmail,doctorQualification,doctorSpecialist,doctorWorktime,doctorPassword);
                     doctorList.add(doctor);
                 }
             }

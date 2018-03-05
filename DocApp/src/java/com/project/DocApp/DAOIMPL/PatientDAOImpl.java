@@ -107,6 +107,7 @@ public class PatientDAOImpl implements PatientDAO {
             if(resultSet!=null){
                 //resultSet.first();
                 while(resultSet.next()){
+                    int patientid = resultSet.getInt(1);
                     String patientName = resultSet.getString(2);
                     String patientSex = resultSet.getString(3);
                     String patientAddress = resultSet.getString(4);
@@ -115,7 +116,7 @@ public class PatientDAOImpl implements PatientDAO {
                     String patientBloodType = resultSet.getString(7);
                     String patientDOB = resultSet.getString(8);
                     String patientPassword = resultSet.getString(9);
-                    Patient patient = new Patient(patientId,patientName,patientSex,patientAddress,patientContact,patientEmail,patientBloodType,patientDOB,patientPassword);
+                    Patient patient = new Patient(patientid,patientName,patientSex,patientAddress,patientContact,patientEmail,patientBloodType,patientDOB,patientPassword);
                     patientList.add(patient);
                 }
             }
