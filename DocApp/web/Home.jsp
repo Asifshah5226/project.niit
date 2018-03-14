@@ -1,9 +1,11 @@
+<%-- 
+    Document   : homepage
+    Created on : 14 Mar, 2018, 9:38:49 PM
+    Author     : Asif
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title> Doctors Appointment </title>
@@ -35,6 +37,10 @@ and open the template in the editor.
         height:50px;
         
     }
+    h2{
+        max-width:100%;
+        max-height:100%;
+    }
     
     /* Set black background color, white text and some padding */
     footer {
@@ -55,11 +61,11 @@ and open the template in the editor.
       }
       .row.content {height:auto;} 
     }
+    
   </style>
   <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
     </head>
     <body>
-        
         <nav class="navbar navbar-inverse"> 
         <div class="container-fluid">
     <div class="navbar-header">
@@ -74,9 +80,9 @@ and open the template in the editor.
             <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Branches</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Branches.jsp">Branches</a></li>
+        <li><a href="Contact Us.jsp">Contact Us</a></li>
         <li><a href="#">Patient's Registration</a></li>
       </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -91,7 +97,7 @@ and open the template in the editor.
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
+        <h2> <img src="img/doc.jpg"> </h2>
       <p><a href="#">Link</a></p>
       <p><a href="#">Link</a></p>
     </div>
@@ -119,5 +125,3 @@ and open the template in the editor.
 
 </body>
 </html>
-
-   

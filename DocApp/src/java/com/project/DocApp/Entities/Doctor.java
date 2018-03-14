@@ -14,6 +14,9 @@ public class Doctor {
     public Doctor(int doctorId, String doctorName, String doctorAddress, String doctorContact, String doctorEmail, String doctorQualification, String doctorSpecialist, String doctorWorktime, String doctorPassword) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+     public Doctor(String doctorName, String doctorAddress, String doctorContact, String doctorEmail, String doctorQualification, String doctorSpecialist, String doctorWorktime, String doctorPassword) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public int getDoctorId() {
         return doctorId;
