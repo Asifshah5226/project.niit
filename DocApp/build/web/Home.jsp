@@ -38,8 +38,8 @@
         
     }
     h2{
-        max-width:100%;
-        max-height:100%;
+        max-width:200%;
+        max-height:200%;
     }
     
     /* Set black background color, white text and some padding */
@@ -97,13 +97,12 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-        <h2> <img src="img/doc.jpg"> </h2>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+        <h2> <img src="img/hospital.jpg"></h2>
+      <p><b>Stay Healthy Hospital</b></p><br><p>One of the prominent names for hospitals all over India and we are growing and expanding all over the world.With best class machines and a team of well professional doctors let us <br><b>"STAY HEALTHY"</b><br>together...</p>
     </div>
       <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
-      <p>welcome</p>
+      <h1>STAY HEALTHY HOSPITALS</h1>
+      <p><b><marquee> stay healthy </marquee> </b></p>
       <hr>
       <h3>Test</h3>
       <p>test</p>
