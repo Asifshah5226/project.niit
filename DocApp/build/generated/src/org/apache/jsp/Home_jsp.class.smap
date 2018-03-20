@@ -7,8 +7,12 @@ JSP
 Home.jsp
 + 1 header.jsp
 header.jsp
++ 2 footer.jsp
+footer.jsp
 *L
-5,7:49
-5#1,76:56
-11#0,79:131
+5,4:50
+5#1,76:53
+8#0,75:128
+5#2,40:203
+82#0:242
 *E

@@ -81,8 +81,7 @@ background-image: url("img/");
 </br>
 <input type="button" name="" value="Login">
 </br>
-<center>OR</center>
-<center><a href="psignup.jsp">Create New Login</a</center>
+
 </form>
 </div>
 </br>

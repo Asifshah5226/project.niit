@@ -12,8 +12,9 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants = new java.util.ArrayList<String>(2);
     _jspx_dependants.add("/header.jsp");
+    _jspx_dependants.add("/footer.jsp");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -49,10 +50,6 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        ");
       out.write("\n");
       out.write("\n");
       out.write("\n");
@@ -129,6 +126,10 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </body>\n");
       out.write("</html>\n");
       out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("\n");
+      out.write("    <head>\n");
+      out.write("        \n");
       out.write("        <title> Doctors Appointment </title>\n");
       out.write("        <meta charset=\"UTF-8\">\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
@@ -174,7 +175,6 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  </style>\n");
       out.write("  <link rel=\"shortcut icon\" type=\"image/jpg\" href=\"img/favicon.jpg\">\n");
       out.write("    </head>\n");
-      out.write("    <body>\n");
       out.write("        \n");
       out.write("<div class=\"container-fluid text-center\">    \n");
       out.write("  <div class=\"row content\">\n");
@@ -199,13 +199,47 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </div>\n");
       out.write("  </div>\n");
       out.write("</div>\n");
+      out.write(" ");
       out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("          <link rel=\"shortcut icon\" type=\"image/jpg\" href=\"img/favicon.jpg\">\n");
+      out.write("         <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n");
+      out.write("  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n");
+      out.write(" <meta charset=\"UTF-8\">\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\"/>\n");
+      out.write("        <link href=\"css/basic-template.css\" rel=\"stylesheet\"/>\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("        <style>\n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("             footer {\n");
+      out.write("        position: fixed;\n");
+      out.write("        left:0;\n");
+      out.write("        bottom:0;\n");
+      out.write("        width:100%;\n");
+      out.write("        background-color: #555;\n");
+      out.write("        color: white;\n");
+      out.write("        padding: 4px;\n");
+      out.write("    }\n");
+      out.write("        </style>\n");
+      out.write("    \n");
+      out.write("    \n");
+      out.write("    \n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
       out.write("<footer class=\"container-fluid text-center\">\n");
       out.write("  <p> @Copyright by DocApp 2018 </p>\n");
       out.write("</footer>\n");
-      out.write("\n");
-      out.write("</body>\n");
+      out.write("    </body>\n");
       out.write("</html>\n");
+      out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
