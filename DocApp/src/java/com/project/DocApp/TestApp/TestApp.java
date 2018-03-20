@@ -17,9 +17,9 @@ import java.util.List;
 public class TestApp {
     public static void main(String[] args){
         DoctorDAO doctorDAO = new DoctorDAOImpl();
-        int count = doctorDAO.AddDoctor(new Doctor("Rahul","Bhayander","7715088893","rahul@niit.com","MBBS","HeartSpecialist","10am","Rahul123"));
-        if(count>0)System.out.println("Record Added Successfully");
-        else System.out.println("Record Failed to get added");
+       // int count = doctorDAO.AddDoctor(new Doctor("Rahul","Bhayander","7715088893","rahul@niit.com","MBBS","HeartSpecialist","10am","Rahul123"));
+       // if(count>0)System.out.println("Record Added Successfully");
+       // else System.out.println("Record Failed to get added");
 //        count=doctorDAO.deleteDoctor(1);
 //        if(count>0)System.out.println("Record Deleted Successfully");
 //        else System.out.println("Record Failed to get deleted");
@@ -28,7 +28,7 @@ public class TestApp {
 //        if(count>0)System.out.println("Record Updated Successfully");
 //        else System.out.println("Record Failed to get updated");
         List<Doctor> doctorList = doctorDAO.getAllDoctor();
-        for(Doctor doctor : doctorList){
+       for(Doctor doctor : doctorList){
             System.out.println(doctor.getDoctorId() + "|" + doctor.getDoctorName() + "|" + doctor.getDoctorAddress() +"|" + doctor.getDoctorContact() +"|" + doctor.getDoctorEmail() +"|" + doctor.getDoctorQualification() + "|" + doctor.getDoctorSpecialist() + "|" + doctor.getDoctorWorktime() + "|" + doctor.getDoctorPassword() );
         }
         Doctor doctor = doctorDAO.getDoctorByID(3001);
